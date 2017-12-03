@@ -1,2 +1,6 @@
-# project-euler
-My progress learning python with Project Euler
+# Project-euler
+My progress learning python and mathematics with Project Euler
+
+## Done
+
+## WIP
