@@ -1,13 +1,16 @@
-# Method 1 : brute force
 def is_palindrome(number):
     #using string
     return str(number) == str(number)[::-1]
 
-max = 0
-for i in range(1000):
-    for j in range(1000):
-        prod = i * j
-        if prod > max and is_palindrome(prod):
-            max = prod
 
-print(max)
+palindromes = []
+
+for a in range(100, 1000):
+    for b in range(100, 1000):
+        if a % 11 == 0 or b % 11 == 0:
+            product = a * b
+            if is_palindrome(product):
+                palindromes.append(product)
+
+print(*palindromes, sep='\n')
+print(max(palindromes))
